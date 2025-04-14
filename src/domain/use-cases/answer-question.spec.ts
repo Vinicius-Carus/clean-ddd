@@ -15,8 +15,8 @@ test("create an answer", async () => {
 
   const answer = await answerQuestion.execute({
     content: "Answer content",
-    instructorId: new UniqueEntityID("1"),
-    questionId: new UniqueEntityID("1"),
+    instructorId: "1",
+    questionId: "1",
   });
 
   expect(answer.content).toEqual("Answer content");
